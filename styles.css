@@ -4,7 +4,8 @@ body {
 }
 
 #wrapper {
-  margin: 20px;
+  margin: 20px auto;
+  width: 90%;
   max-width: 1200px;
 }
 
@@ -35,6 +36,7 @@ body {
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
   display: flex;
+  padding: 5px;
 }
 
 .thumbnail-wrapper {
@@ -45,8 +47,6 @@ body {
 }
 
 .thumbnail {
-  /*height: 90px;
-  width: 90px;*/
   max-width: 90%;
   height: auto;
   border-radius: 50%;
@@ -56,15 +56,31 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 58%;
+  padding-left: 5px;
 }
 
-@media (min-width: 630px) {
-  #wrapper {
-    margin: 20px 40px;
-  }
+.name, 
+.hometown {
+  text-transform: capitalize;
 }
 
-@media (min-width: 670px) {
+.name {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.email_name,
+.email_domain {
+  display: inline;
+}
+
+.email_name {
+  margin-right: -3px;
+}
+
+
+@media (min-width: 656px) {
   #header {
     text-align: left;
     font-size: 1em;
