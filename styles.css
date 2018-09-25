@@ -5,6 +5,7 @@ body {
 
 #wrapper {
   margin: 20px;
+  max-width: 1200px;
 }
 
 #header {
@@ -16,18 +17,23 @@ body {
 
 #grid-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 280px);
+  grid-template-columns: repeat(auto-fill, minmax(280px, .8fr));
   grid-gap: 30px;
   justify-content: center;
-  max-width: 1204px;
-  margin: 0 auto;
+  margin: 0 auto;  
 }
 
 .grid-box {
-  width: 280px;
-  height: 120px;
+  width: 100%;
+  padding-bottom: 45%;
+  position: relative;
   border: 2px solid lightgray;
   border-radius: 8px;
+}
+
+.grid-box-inner {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
   display: flex;
 }
 
@@ -39,8 +45,10 @@ body {
 }
 
 .thumbnail {
-  height: 90px;
-  width: 90px;
+  /*height: 90px;
+  width: 90px;*/
+  max-width: 90%;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -51,17 +59,14 @@ body {
 }
 
 @media (min-width: 630px) {
-  #header {
-    text-align: left;
-    font-size: 1em;
-    grid-column-start: 1;
-    grid-column-end: 3;
+  #wrapper {
+    margin: 20px 40px;
   }
 }
 
-@media (min-width: 940px) {
+@media (min-width: 670px) {
   #header {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    text-align: left;
+    font-size: 1em;
   }
 }
