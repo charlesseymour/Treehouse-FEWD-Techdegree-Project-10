@@ -140,3 +140,241 @@ body {
     font-size: 1em;
   }
 }
+
+@media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .grid-box {
+    margin-bottom: 10px;
+  }
+  
+  .thumbnail {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (-ms-high-contrast: none) and (max-width: 655px),
+       (-ms-high-contrast: active) and (max-width: 655px) {
+  
+  #grid-wrapper {
+    display: -ms-grid;
+    -ms-grid-columns: minmax(280px, .8fr);
+    -ms-grid-rows: (150px)[12];
+  }
+  
+  
+  
+  .grid-box:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  
+  .grid-box:nth-child(2) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+  
+  .grid-box:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  
+  .grid-box:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+  }
+  
+  .grid-box:nth-child(5) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+  }
+  
+  .grid-box:nth-child(6) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 6;
+  }
+  
+  .grid-box:nth-child(7) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 7;
+  }
+  
+  .grid-box:nth-child(8) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 8;
+  }
+  
+  .grid-box:nth-child(9) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 9;
+  }
+  
+  .grid-box:nth-child(10) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 10;
+  }
+  
+  .grid-box:nth-child(11) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 11;
+  }
+  
+  .grid-box:nth-child(12) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 12;
+  }
+  
+  
+}
+
+@media (-ms-high-contrast: none) and (min-width: 656px),
+       (-ms-high-contrast: active) and (min-width: 656px) {
+  
+  #grid-wrapper {
+    display: -ms-grid;
+    -ms-grid-columns: minmax(280px, .4fr) 20px minmax(280px, .4fr);
+    -ms-grid-rows: (150px)[6];
+  }        
+
+  .grid-box:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  
+  .grid-box:nth-child(2) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+  }
+  
+  .grid-box:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+  
+  .grid-box:nth-child(4) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+  }
+  
+  .grid-box:nth-child(5) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  
+  .grid-box:nth-child(6) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+  }
+  
+  .grid-box:nth-child(7) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+  }
+  
+  .grid-box:nth-child(8) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 4;
+  }
+  
+  .grid-box:nth-child(9) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+  }
+  
+  .grid-box:nth-child(10) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 5;
+  }
+  
+  .grid-box:nth-child(11) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 6;
+  }
+  
+  .grid-box:nth-child(12) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 6;
+  }
+  
+  .thumbnail {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (-ms-high-contrast: none) and (min-width: 1000px),
+       (-ms-high-contrast: active) and (min-width: 1000px) {
+  
+  #grid-wrapper {
+    display: -ms-grid;
+    -ms-grid-columns: minmax(280px, .4fr) 20px minmax(280px, .4fr) 20px     
+      minmax(280px, .4fr);
+    -ms-grid-rows: (150px)[4];
+  }        
+
+  .grid-box:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+  }
+  
+  .grid-box:nth-child(2) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 1;
+  }
+  
+  .grid-box:nth-child(3) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 1;
+  }
+  
+  .grid-box:nth-child(4) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+  }
+  
+  .grid-box:nth-child(5) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+  }
+  
+  .grid-box:nth-child(6) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 2;
+  }
+  
+  .grid-box:nth-child(7) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+  }
+  
+  .grid-box:nth-child(8) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+  }
+  
+  .grid-box:nth-child(9) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 3;
+  }
+  
+  .grid-box:nth-child(10) {
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+  }
+  
+  .grid-box:nth-child(11) {
+    -ms-grid-column: 3;
+    -ms-grid-row: 4;
+  }
+  
+  .grid-box:nth-child(12) {
+    -ms-grid-column: 5;
+    -ms-grid-row: 4;
+  }
+  
+  .thumbnail {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+
