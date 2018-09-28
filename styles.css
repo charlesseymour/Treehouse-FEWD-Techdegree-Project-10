@@ -141,6 +141,8 @@ body {
   }
 }
 
+/* Grid for IE */
+
 @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .grid-box {
     margin-bottom: 10px;
@@ -160,8 +162,6 @@ body {
     -ms-grid-columns: minmax(280px, .8fr);
     -ms-grid-rows: (150px)[12];
   }
-  
-  
   
   .grid-box:nth-child(1) {
     -ms-grid-column: 1;
